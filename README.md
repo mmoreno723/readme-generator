@@ -1,10 +1,9 @@
-# cool title
+# Generator of Readmes
 ![GitHub License] (url)
     
 ## Description
     
-Github: morenom
-a cool project
+Creates a professional readme file for your work
 
 ## Table of Contents
 
@@ -21,18 +20,23 @@ a cool project
 - [Questions](#questions)
 
 ## Installation
-npm i
+To install the necessary dependencies, run the following command: 
+        
+    npm i
 
 ## Usage
-nothing
+DOwnload and run it
 
 ## License
 
 ## Contributing
-nothing
+make pull requests
 
 ## Tests
-npm test
+To run any tests, run the following command:
+
+    npm tests
 
 ## Questions
-If you have any questions please contact me at mmoreno@email
+If you have any questions please contact me at morenomichael723@gmail.com
+You can also find me on GitHub at this username: morenom723

@@ -21,7 +21,6 @@ const generateReadme = ({
     
 ## Description
     
-Github: ${github}
 ${description}
 
 ## Table of Contents
@@ -39,7 +38,9 @@ ${description}
 - [Questions](#questions)
 
 ## Installation
-${dependencies}
+To install the necessary dependencies, run the following command: 
+        
+    ${dependencies}
 
 ## Usage
 ${usage}
@@ -50,10 +51,13 @@ ${usage}
 ${contribution}
 
 ## Tests
-${tests}
+To run any tests, run the following command:
+
+    ${tests}
 
 ## Questions
-If you have any questions please contact me at ${email}`;
+If you have any questions please contact me at ${email}
+You can also find me on GitHub at this username: ${github}`;
   console.log(readme);
   fs.writeFile("README.md", readme, "utf8", (err) => {
     if (err) throw err;
@@ -96,19 +100,22 @@ inquirer
       name: "description",
     },
     {
-      type: "input",
+      type: "list",
       message: questions[4],
       name: "license",
+      choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
     },
     {
       type: "input",
       message: questions[5],
       name: "dependencies",
+      default: "npm i",
     },
     {
       type: "input",
       message: questions[6],
       name: "tests",
+      default: "npm tests",
     },
     {
       type: "input",
