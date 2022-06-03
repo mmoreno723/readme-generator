@@ -1,9 +1,9 @@
-# Generator of Readmes
-![GitHub License] (url)
+# Readme Generator
+
     
 ## Description
     
-Creates a professional readme file for your work
+This application will create a professional readme file for your work. The program is run by node.js within your terminal. Simply run a node index and answer the questions from the prompts. Your readme file will then be created and added to your working folder. 
 
 ## Table of Contents
 
@@ -25,12 +25,13 @@ To install the necessary dependencies, run the following command:
     npm i
 
 ## Usage
-DOwnload and run it
+Download the repo from Github and install it to your  VS Code so you can access the generator.
 
 ## License
+MIT
 
 ## Contributing
-make pull requests
+If you would like to contribute to this project, please ensure to perform a pull request that details your change.
 
 ## Tests
 To run any tests, run the following command:

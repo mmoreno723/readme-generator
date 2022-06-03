@@ -1,25 +1,34 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  const licenseBadge = "https://img.shields.io/apm/l/vim-mode";
-  console.log(licenseBadge);
+  switch (license) {
+    case "MIT":
+      return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
+  }
 }
-
-const apacheLink = "https://www.apache.org/licenses/LICENSE-2.0.txt";
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  switch (license) {
+    case "MIT":
+      return "(https://opensource.org/licenses/MIT)";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  const badge = renderLicenseBadge(license);
+  const link = renderLicenseLink(license);
+  return badge + link;
+}
 
+//const badge = renderLicenseSection(license);
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
 `;
 }
-renderLicenseBadge();
 
 module.exports = generateMarkdown;
